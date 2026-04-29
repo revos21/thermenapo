@@ -1,0 +1,41 @@
+{
+  "page": "/leistungen/",
+  "seo": {
+    "title": "Leistungen – Thermen Apotheke Bad Waltersdorf",
+    "description": "Impfberatung, Reiseberatung, Kosmetik, Bachblüten, Teemischungen, Hausapotheken-Check. Unsere Leistungen im Überblick."
+  },
+  "hero": {
+    "h1": "Die umfangreichen Leistungen unserer Apotheke werden Sie begeistern",
+    "subline": "Von Impfberatung bis Hausapotheken-Check – wir beraten Sie gerne persönlich.",
+    "ctas": [
+      { "label": "Kontakt aufnehmen", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Impfberatung",
+      "body": "Wir informieren Sie zu empfohlenen Impfungen, Reiseimpfungen und Auffrischungen – sachlich und auf Sie zugeschnitten."
+    },
+    {
+      "title": "Reiseberatung",
+      "body": "Ob Reiseapotheke, Malariaprophylaxe oder Reiseimpfungen: Wir bereiten Sie gerne auf Ihre Reise vor."
+    },
+    {
+      "title": "Kosmetikberatung",
+      "body": "Hauttyp, Pflegebedürfnisse und Produktqualität – wir beraten Sie zu Kosmetik aus der Apotheke und helfen bei der Auswahl."
+    },
+    {
+      "title": "Bachblüten",
+      "body": "Bachblüten können in belastenden Situationen unterstützen. Wir beraten Sie gerne zur Auswahl und Anwendung."
+    },
+    {
+      "title": "Individuelle Teemischungen",
+      "body": "Nach Ihren Wünschen mischen wir Tees individuell an – für Genuss und Wohlbefinden."
+    },
+    {
+      "title": "Kontrolle der Hausapotheke",
+      "body": "Wir prüfen gerne mit Ihnen, ob Ihre Hausapotheke vollständig und aktuell ist – damit Sie im Alltag gut versorgt sind."
+    }
+  ],
+  "primaryCta": "Kontakt aufnehmen"
+}

@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  command = "echo 'Static site - no build step required'"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Pretty URLs for folder-based routes already work due to index.html files.
+# Redirect only the root form submission path if needed by Netlify fallback.
+[[redirects]]
+  from = "/kontakt/danke"
+  to = "/kontakt/danke/"
+  status = 301

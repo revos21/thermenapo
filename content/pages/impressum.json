@@ -1,0 +1,40 @@
+{
+  "page": "/impressum/",
+  "seo": {
+    "title": "Impressum – Thermen Apotheke Bad Waltersdorf",
+    "description": "Impressum und rechtliche Angaben der Thermen Apotheke Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Impressum",
+    "subline": null,
+    "ctas": []
+  },
+  "legal": {
+    "sections": [
+      {
+        "title": "Betreiber",
+        "body": "Thermen Apotheke Bad Waltersdorf\nBad Waltersdorf 6\n8271 Bad Waltersdorf\nÖsterreich"
+      },
+      {
+        "title": "Kontakt",
+        "body": "Telefon: +43 3333 3970\nE-Mail: thermenapo.waltersdorf@aon.at"
+      },
+      {
+        "title": "Aufsichtsbehörde",
+        "body": "Zuständige Behörde: Landesgeschäftsstelle der Österreichischen Apothekerkammer (Steiermark)."
+      },
+      {
+        "title": "Berufsrechtliche Angaben",
+        "body": "Berufsbezeichnung: Apothekerin/Apotheker (verliehen in Österreich)."
+      },
+      {
+        "title": "Redaktionell verantwortlich",
+        "body": "Mag. Pharm. Doris Pieler / Mag. Pharm. Anna Katharina Wurzer, Bad Waltersdorf 6, 8271 Bad Waltersdorf."
+      },
+      {
+        "title": "Haftungsausschluss",
+        "body": "Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Links zu externen Websites liegen außerhalb unseres Verantwortungsbereichs."
+      }
+    ]
+  }
+}

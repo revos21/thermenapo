@@ -1,0 +1,33 @@
+{
+  "page": "/produkte/immunsystemstaerkung/",
+  "seo": {
+    "title": "Immunsystemstärkung – Thermen Apotheke Bad Waltersdorf",
+    "description": "Wirksame Produkte zur Unterstützung der Abwehrkräfte: Pflanzenstoffe, Vitamine, Mineralstoffe. Beratung in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Wirksame Produkte zur Immunsystemstärkung",
+    "subline": "Die Abwehrkräfte natürlich unterstützen – mit Pflanzenstoffen, Vitaminen und Mineralstoffen.",
+    "ctas": [
+      { "label": "Beratung vor Ort", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Ursachen und Unterstützung",
+      "body": "Stress, Schlafmangel oder einseitige Ernährung können die Abwehr belasten. Mit der richtigen Ernährung, ausreichend Bewegung und gezielter Ergänzung können Sie Ihre Abwehrkräfte unterstützen."
+    },
+    {
+      "title": "Pflanzenstoffe, Vitamine und Mineralstoffe",
+      "body": "Viele pflanzliche Stoffe, Vitamine (z. B. Vitamin C, D, Zink) und Mineralstoffe tragen zur normalen Funktion des Immunsystems bei. Wir beraten Sie gerne zu geeigneten Produkten und Dosierung."
+    },
+    {
+      "title": "Homöopathie und Abwehr",
+      "body": "Auch homöopathische Arzneimittel werden von vielen Menschen zur Unterstützung der Abwehr genutzt. Wir erklären Ihnen die Anwendung und helfen bei der Auswahl."
+    },
+    {
+      "title": "Tipps für den Alltag",
+      "body": "Ausgewogene Ernährung, Bewegung an der frischen Luft, ausreichend Schlaf und gute Hygiene können die Abwehr zusätzlich stärken. Gerne geben wir Ihnen Tipps, die zu Ihrem Alltag passen."
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}

@@ -1,0 +1,38 @@
+{
+  "page": "/",
+  "seo": {
+    "title": "Thermen Apotheke Bad Waltersdorf – Ihre Apotheke in der Thermenregion",
+    "description": "Persönliche Beratung, breites Sortiment und Service in Bad Waltersdorf. Mo–Fr 08:00–12:30 & 14:30–18:00, Sa 08:00–12:00. Nachtdienst: 1455."
+  },
+  "hero": {
+    "h1": "Ihre Apotheke in Bad Waltersdorf",
+    "subline": "Persönlich, kompetent und für Sie da – in der Thermenregion Steiermark.",
+    "ctas": [
+      { "label": "Kontakt & Anfahrt", "href": "/kontakt/", "primary": true },
+      { "label": "Nachtdienst 1455", "href": "https://www.apotheker.or.at/nachtdienst", "primary": false }
+    ]
+  },
+  "notice": {
+    "title": "Neuübernahme ab 1. Jänner 2026",
+    "body": "Mag. Pharm. Doris Pieler und Mag. Pharm. Anna Katharina Wurzer führen die Thermen Apotheke Bad Waltersdorf mit frischem Schwung weiter. Bewährtes bleibt: Ihre gewohnte Beratung, das breite Sortiment und der persönliche Service – jetzt mit dem gleichen Engagement an vertrauter Adresse."
+  },
+  "sections": [
+    {
+      "id": "services",
+      "title": "Wir sind flexibel und kompetent für Sie da",
+      "body": "Ob kurzfristiger Medikamentenbedarf, Reiseapotheke oder besondere Wünsche – wir unterstützen Sie gerne. Bei uns erhalten Sie unter anderem:",
+      "bullets": [
+        "Medikamente kurzfristig besorgen (nicht vorrätige bestellen wir in der Regel bis zum nächsten Werktag)",
+        "Reiseapotheke und Beratung für unterwegs",
+        "Milchpumpen und Babywägen zum Ausleihen",
+        "Nachtdienst: Rufnummer 1455 bzw. Informationen unter apotheker.or.at"
+      ]
+    },
+    {
+      "id": "anfahrt",
+      "title": "Anfahrt & Erreichbarkeit",
+      "body": "Sie finden uns zentral in Bad Waltersdorf. Kostenlose Parkplätze und Behindertenparkplätze in der Nähe. Die Apotheke ist barrierefrei zugänglich. Für kleine Gäste steht eine Spielecke bereit."
+    }
+  ],
+  "primaryCta": "Kontakt & Anfahrt"
+}

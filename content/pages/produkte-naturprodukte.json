@@ -1,0 +1,25 @@
+{
+  "page": "/produkte/naturprodukte/",
+  "seo": {
+    "title": "Naturprodukte – Thermen Apotheke Bad Waltersdorf",
+    "description": "Heilen mit der Kraft der Natur: Seifen, Salben, Öle, Sirupe, Tees. Sonnentor-Tees und mehr in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Heilen mit der Kraft der Natur",
+    "subline": "Seifen, Salben, Öle, Sirupe und Tees – natürlich und mit Beratung aus der Apotheke.",
+    "ctas": [
+      { "label": "Beratung vor Ort", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Vielfalt aus der Natur",
+      "body": "Wir führen eine Auswahl an Naturprodukten: von Seifen und Salben über Öle und Sirupe bis zu Kräutertees. Viele Menschen schätzen die schonende Wirkung und die natürlichen Rohstoffe."
+    },
+    {
+      "title": "Sonnentor-Tees",
+      "body": "Die beliebten Sonnentor-Tees sind bei uns erhältlich – in vielen Sorten für Genuss und Wohlbefinden. Gerne beraten wir Sie auch zu individuellen Teemischungen."
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}

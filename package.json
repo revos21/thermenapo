@@ -1,0 +1,11 @@
+{
+  "name": "thermen-apotheke",
+  "private": true,
+  "scripts": {
+    "start": "serve",
+    "dev": "serve"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

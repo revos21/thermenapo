@@ -1,0 +1,29 @@
+{
+  "page": "/kontakt/hartberg/",
+  "seo": {
+    "title": "Hochwertige Naturprodukte kaufen bei Hartberg – Thermen Apotheke",
+    "description": "Von Bad Waltersdorf aus auch für die Region Hartberg erreichbar: Beratung, Naturprodukte, Kosmetik, Homöopathie. Thermen Apotheke."
+  },
+  "hero": {
+    "h1": "Hochwertige Naturprodukte kaufen bei Hartberg",
+    "subline": "Aus der Thermenregion gut erreichbar: Unsere Apotheke in Bad Waltersdorf bietet Ihnen Beratung und ein breites Sortiment – auch für Gäste und Kunden aus dem Raum Hartberg.",
+    "ctas": [
+      { "label": "Kontakt & Anfahrt", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Beratung und Sortiment",
+      "body": "Ob Naturprodukte, Homöopathie, Kosmetik oder Tees – wir beraten Sie gerne und führen ein vielfältiges Sortiment. Die Thermen Apotheke in Bad Waltersdorf ist von Hartberg aus in kurzer Zeit erreichbar."
+    },
+    {
+      "title": "Anfahrt",
+      "body": "Bad Waltersdorf liegt in der Thermenregion Steiermark. Sie finden uns unter der Adresse Bad Waltersdorf 6, 8271 Bad Waltersdorf. Parkplätze und barrierefreier Zugang sind vorhanden."
+    },
+    {
+      "title": "Ihr Ansprechpartner vor Ort",
+      "body": "Unter der Leitung von Mag. Pharm. Doris Pieler und Mag. Pharm. Anna Katharina Wurzer (Neuübernahme ab 1. Jänner 2026) steht Ihnen das Team der Thermen Apotheke für Beratung und Service zur Verfügung."
+    }
+  ],
+  "primaryCta": "Kontakt & Anfahrt"
+}

@@ -1,0 +1,29 @@
+{
+  "page": "/ueber-uns/",
+  "seo": {
+    "title": "Über uns – Thermen Apotheke Bad Waltersdorf",
+    "description": "Ihre Apotheke mit ausführlicher, persönlicher Beratung in Bad Waltersdorf. Neutral, sach- und fachgerecht. Jetzt unter neuer Leitung ab Jänner 2026."
+  },
+  "hero": {
+    "h1": "Ihre Apotheke mit ausführlicher, persönlicher Beratung in Bad Waltersdorf",
+    "subline": "Neutral, sach- und fachgerecht – in angenehmer Atmosphäre und hellen Räumlichkeiten.",
+    "ctas": [
+      { "label": "Kontakt & Anfahrt", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Persönlicher Kontakt, der zählt",
+      "body": "Bei uns stehen Sie im Mittelpunkt. Wir nehmen uns Zeit für Ihre Fragen und beraten Sie neutral sowie sach- und fachgerecht. Die hellen, freundlichen Räumlichkeiten sorgen für eine angenehme Atmosphäre – für Einheimische und Gäste der Thermenregion."
+    },
+    {
+      "title": "Engagement über die Apotheke hinaus",
+      "body": "Die Thermen Apotheke unterstützt den Österreichischen Behinderten-Sportverband und Special Olympics. So verbinden wir lokale Verantwortung mit gesellschaftlichem Engagement."
+    },
+    {
+      "title": "Zahlungsmöglichkeiten",
+      "body": "Sie können bei uns bequem bar, mit Bankomatkarte oder mit gängigen Kreditkarten zahlen."
+    }
+  ],
+  "primaryCta": "Kontakt & Anfahrt"
+}

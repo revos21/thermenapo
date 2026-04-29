@@ -1,0 +1,16 @@
+{
+  "page": "/datenschutz/",
+  "seo": {
+    "title": "Datenschutz – Thermen Apotheke Bad Waltersdorf",
+    "description": "Datenschutzerklärung der Thermen Apotheke Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Datenschutz",
+    "subline": null,
+    "ctas": []
+  },
+  "legal": {
+    "placeholder": true,
+    "notice": "Die vollständige, rechtssichere Datenschutzerklärung wird vom Projekt/Rechtsberater bereitgestellt. Bitte die Legal-Version (DSGVO-konform) aus dem Projekt anfordern und hier einfügen. Bis dahin gilt: Wir behandeln Ihre Daten vertraulich und nur im Rahmen der gesetzlichen Vorgaben."
+  }
+}

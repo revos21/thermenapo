@@ -1,0 +1,35 @@
+<svg width="460" height="300" viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softBlurRight" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.0" />
+    </filter>
+    <linearGradient id="stemRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#95AA9B" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#7A8F81" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="leafRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A9BBAE" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#879B8B" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#softBlurRight)">
+    <path d="M444 276C406 248 356 206 324 166C290 124 274 80 266 34" stroke="url(#stemRight)" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M392 252C360 226 322 184 302 146" stroke="url(#stemRight)" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M430 268C402 242 364 198 340 162" stroke="url(#stemRight)" stroke-width="2" stroke-linecap="round"/>
+
+    <ellipse cx="336" cy="172" rx="22" ry="10" transform="rotate(22 336 172)" fill="url(#leafRight)"/>
+    <ellipse cx="316" cy="150" rx="20" ry="9.2" transform="rotate(10 316 150)" fill="url(#leafRight)"/>
+    <ellipse cx="298" cy="128" rx="19" ry="8.7" transform="rotate(2 298 128)" fill="url(#leafRight)"/>
+    <ellipse cx="282" cy="106" rx="18" ry="8.2" transform="rotate(-8 282 106)" fill="url(#leafRight)"/>
+
+    <ellipse cx="362" cy="196" rx="16" ry="7.6" transform="rotate(30 362 196)" fill="url(#leafRight)"/>
+    <ellipse cx="346" cy="178" rx="15" ry="7.1" transform="rotate(18 346 178)" fill="url(#leafRight)"/>
+    <ellipse cx="328" cy="156" rx="14" ry="6.8" transform="rotate(8 328 156)" fill="url(#leafRight)"/>
+    <ellipse cx="310" cy="136" rx="13" ry="6.4" transform="rotate(-6 310 136)" fill="url(#leafRight)"/>
+
+    <ellipse cx="404" cy="236" rx="14" ry="6.5" transform="rotate(34 404 236)" fill="url(#leafRight)"/>
+    <ellipse cx="386" cy="218" rx="13.5" ry="6.2" transform="rotate(24 386 218)" fill="url(#leafRight)"/>
+    <ellipse cx="368" cy="198" rx="13" ry="6.0" transform="rotate(14 368 198)" fill="url(#leafRight)"/>
+  </g>
+</svg>

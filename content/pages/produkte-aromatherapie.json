@@ -1,0 +1,33 @@
+{
+  "page": "/produkte/aromatherapie/",
+  "seo": {
+    "title": "Aromatherapie – Thermen Apotheke Bad Waltersdorf",
+    "description": "Beschwerden lindern mit Aromatherapie. Ätherische Öle, individuelle Mischungen. Beratung in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Beschwerden lindern mit Aromatherapie",
+    "subline": "Ätherische Öle aus kontrollierter Gewinnung – für Wohlbefinden und gezielte Anwendung.",
+    "ctas": [
+      { "label": "Beratung vor Ort", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Ätherische Öle",
+      "body": "Ätherische Öle werden aus Pflanzen gewonnen und können auf vielfältige Weise eingesetzt werden – etwa zur Raumbeduftung, in der Hautpflege (verdünnt) oder zur Unterstützung des Wohlbefindens."
+    },
+    {
+      "title": "Gewinnung und Qualität",
+      "body": "Die Qualität der Öle hängt von Herkunft, Ernte und Verarbeitung ab. Wir führen Öle aus kontrollierter Gewinnung und beraten Sie zu Anwendung und Dosierung."
+    },
+    {
+      "title": "Individuelle Mischung",
+      "body": "Je nach Anliegen können wir für Sie individuelle Mischungen zusammenstellen – für Duftlampe, Körperöl oder andere Anwendungen."
+    },
+    {
+      "title": "Einsatzbereiche",
+      "body": "Aromatherapie kann in vielen Bereichen unterstützen: von Entspannung über Konzentration bis zur Pflege. Wir erklären Ihnen die Anwendung und Hinweise (z. B. Schwangerschaft, Kinder, Allergien)."
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}

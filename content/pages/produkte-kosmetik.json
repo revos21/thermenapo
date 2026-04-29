@@ -1,0 +1,29 @@
+{
+  "page": "/produkte/kosmetik/",
+  "seo": {
+    "title": "Kosmetik – Thermen Apotheke Bad Waltersdorf",
+    "description": "Kosmetikprodukte namhafter Hersteller: Louis Widmer, La Roche-Posay, Avène, Vichy. Auch Naturkosmetik. Beratung in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Kosmetikprodukte namhafter Hersteller in Apothekenqualität",
+    "subline": "Von medizinischer Hautpflege bis Naturkosmetik – Qualität, Innovation und geschulte Beratung.",
+    "ctas": [
+      { "label": "Beratung vor Ort", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Marken und Sortiment",
+      "body": "Wir führen Kosmetik namhafter Hersteller wie Louis Widmer, La Roche-Posay, Avène und Vichy. Auch Naturkosmetik ist bei uns erhältlich – für jeden Hauttyp und jedes Anliegen."
+    },
+    {
+      "title": "Qualität und Innovation",
+      "body": "Apothekenkosmetik steht für geprüfte Qualität und innovative Rezepturen. Wir setzen auf Produkte, die Hautverträglichkeit und Wirksamkeit verbinden."
+    },
+    {
+      "title": "Geschulte Beratung",
+      "body": "Welche Pflege passt zu Ihrer Haut? Wir beraten Sie gerne zu Reinigung, Pflege und Sonnenschutz – sachlich und individuell."
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}

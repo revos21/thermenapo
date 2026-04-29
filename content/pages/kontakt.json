@@ -1,0 +1,16 @@
+{
+  "page": "/kontakt/",
+  "seo": {
+    "title": "Kontakt & Anfahrt – Thermen Apotheke Bad Waltersdorf",
+    "description": "Adresse, Öffnungszeiten, Telefon, E-Mail. Kontaktformular und Anfahrtsinformationen. Thermen Apotheke, Bad Waltersdorf 6."
+  },
+  "hero": {
+    "h1": "Kontakt & Anfahrt",
+    "subline": "Wir freuen uns auf Ihren Besuch in Bad Waltersdorf. Bei Fragen erreichen Sie uns telefonisch, per E-Mail oder über das Kontaktformular.",
+    "ctas": [
+      { "label": "Route planen", "href": "https://www.google.com/maps/search/?api=1&query=Bad+Waltersdorf+6+8271", "primary": true },
+      { "label": "Anrufen", "href": "tel:+4333333970", "primary": false }
+    ]
+  },
+  "formNote": "Das Kontaktformular ist mit Spam-Schutz (z. B. hCaptcha) versehen. Ihre Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet."
+}

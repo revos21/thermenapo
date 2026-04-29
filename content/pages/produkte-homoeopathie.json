@@ -1,0 +1,37 @@
+{
+  "page": "/produkte/homoeopathie/",
+  "seo": {
+    "title": "Homöopathie – Thermen Apotheke Bad Waltersdorf",
+    "description": "Homöopathische Arzneimittel: Tropfen, Tabletten, Globuli. Ganzheitliche Beratung und Dosierung in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Homöopathie – Arzneimittel mit ganzheitlichem Ansatz",
+    "subline": "Klassische Homöopathie in verschiedenen Darreichungsformen – fachkundig beraten, individuell dosiert.",
+    "ctas": [
+      { "label": "Beratung vor Ort", "href": "/kontakt/", "primary": true }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Prinzip der Homöopathie",
+      "body": "Die Homöopathie folgt dem Ähnlichkeitsprinzip: Eine Substanz, die in höherer Dosis bestimmte Beschwerden auslösen kann, kann in potenzierter Form zur Linderung ähnlicher Beschwerden eingesetzt werden."
+    },
+    {
+      "title": "Potenzierung",
+      "body": "Durch Potenzierung werden die Ausgangssubstanzen schrittweise verdünnt und verschüttelt. So entstehen die typischen homöopathischen Potenzen (z. B. D, C, LM)."
+    },
+    {
+      "title": "Ganzheitlich und individuell",
+      "body": "Homöopathie wird von vielen Menschen als ergänzende Möglichkeit genutzt. Die Auswahl und Dosierung sollte individuell erfolgen – wir beraten Sie gerne."
+    },
+    {
+      "title": "Dosierung und Anwendung",
+      "body": "Je nach Mittel und Potenz gelten unterschiedliche Einnahmehinweise. Wir erklären Ihnen die Anwendung und geben Tipps zur Aufbewahrung."
+    },
+    {
+      "title": "Darreichungsformen",
+      "body": "Homöopathische Arzneimittel gibt es als Tropfen, Tabletten und Globuli (Streukügelchen). Welche Form für Sie geeignet ist, besprechen wir gerne mit Ihnen."
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}

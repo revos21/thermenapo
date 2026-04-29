@@ -1,0 +1,45 @@
+{
+  "page": "/produkte/",
+  "seo": {
+    "title": "Produkte – Thermen Apotheke Bad Waltersdorf",
+    "description": "Immunsystem, Kosmetik, Homöopathie, Naturprodukte und Aromatherapie. Entdecken Sie unser Sortiment in Bad Waltersdorf."
+  },
+  "hero": {
+    "h1": "Werfen Sie einen Blick in die Produkt-Vielfalt unserer Apotheke",
+    "subline": "Von Immunsystemstärkung über Apothekenkosmetik bis zu Naturprodukten – bei uns finden Sie Qualität und Beratung.",
+    "ctas": []
+  },
+  "teasers": [
+    {
+      "title": "Immunsystemstärkung",
+      "excerpt": "Pflanzenstoffe, Vitamine und Mineralstoffe – wir beraten Sie zu wirksamen Produkten zur Unterstützung Ihrer Abwehrkräfte.",
+      "href": "/produkte/immunsystemstaerkung/",
+      "icon": "shield"
+    },
+    {
+      "title": "Kosmetik",
+      "excerpt": "Kosmetikprodukte namhafter Hersteller – von Louis Widmer über La Roche-Posay bis zu Naturkosmetik.",
+      "href": "/produkte/kosmetik/",
+      "icon": "spa"
+    },
+    {
+      "title": "Homöopathie",
+      "excerpt": "Homöopathische Arzneimittel in verschiedenen Darreichungsformen – fachkundig beraten, individuell dosiert.",
+      "href": "/produkte/homoeopathie/",
+      "icon": "droplet"
+    },
+    {
+      "title": "Naturprodukte",
+      "excerpt": "Heilen mit der Kraft der Natur – Seifen, Salben, Öle, Sirupe und Tees, u.a. Sonnentor-Tees.",
+      "href": "/produkte/naturprodukte/",
+      "icon": "leaf"
+    },
+    {
+      "title": "Aromatherapie",
+      "excerpt": "Ätherische Öle und individuelle Mischungen – zur Linderung von Beschwerden und für Wohlbefinden.",
+      "href": "/produkte/aromatherapie/",
+      "icon": "flower"
+    }
+  ],
+  "primaryCta": "Beratung vor Ort"
+}
