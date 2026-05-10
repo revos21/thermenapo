@@ -1,14 +1,30 @@
 (function () {
+  /* Off-canvas menu: only when a hamburger toggle exists (mobile rail has no toggle). */
   var toggle = document.querySelector('.menu-toggle');
   var drawer = document.querySelector('.drawer');
   if (!toggle || !drawer) return;
 
+  var backdrop = document.createElement('div');
+  backdrop.className = 'drawer-backdrop';
+  backdrop.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(backdrop);
+
+  var lastFocus = null;
+
   function open() {
+    lastFocus = document.activeElement;
     drawer.classList.add('is-open');
     drawer.setAttribute('aria-hidden', 'false');
     toggle.setAttribute('aria-expanded', 'true');
     toggle.setAttribute('aria-label', 'Menü schließen');
     document.body.style.overflow = 'hidden';
+    backdrop.classList.add('is-visible');
+    var firstLink = drawer.querySelector('a');
+    if (firstLink) {
+      window.setTimeout(function () {
+        firstLink.focus();
+      }, 0);
+    }
   }
 
   function close() {
@@ -17,12 +33,19 @@
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Menü öffnen');
     document.body.style.overflow = '';
+    backdrop.classList.remove('is-visible');
+    if (lastFocus && typeof lastFocus.focus === 'function') {
+      lastFocus.focus();
+    }
+    lastFocus = null;
   }
 
   toggle.addEventListener('click', function () {
     if (drawer.classList.contains('is-open')) close();
     else open();
   });
+
+  backdrop.addEventListener('click', close);
 
   drawer.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', close);
