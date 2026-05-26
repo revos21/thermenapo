@@ -116,7 +116,7 @@ Auf allen Produktseiten ist der Button **„Produkte im Online-Shop“** dauerha
 
 - `PARTNER_SHOP_URL` – vollständige URL zum externen Shop (z. B. `https://partner-apotheke.at/shop`)
 
-Das Build-Script [scripts/inject-env.mjs](scripts/inject-env.mjs) schreibt [`_redirects`](_redirects) für Netlify (`/webshop/` → Partner-URL). Ohne gesetzte Variable leitet `/webshop/` auf `/kontakt/` um. Lokal testen:
+Das Build-Script [scripts/inject-env.mjs](scripts/inject-env.mjs) schreibt [`_redirects`](_redirects) für Netlify (`/webshop/` → Partner-URL, mit erzwungenem Redirect `302!`, damit nicht die statische Seite [webshop/index.html](webshop/index.html) Vorrang hat). Variable unter **Site configuration → Environment variables** setzen (Build-Scope reicht), danach **Redeploy**. Ohne gesetzte Variable leitet `/webshop/` auf `/kontakt/` um. Lokal testen:
 
 ```bash
 PARTNER_SHOP_URL="https://example.com/shop" node scripts/inject-env.mjs

@@ -6,9 +6,10 @@ const REDIRECTS_PATH = path.join(ROOT, "_redirects");
 
 function buildRedirects(partnerShopUrl) {
   const target = partnerShopUrl || "/kontakt/";
+  // 302! = force redirect even when webshop/index.html exists (Netlify serves static files first by default)
   return [
-    `/webshop    ${target}    302`,
-    `/webshop/   ${target}    302`,
+    `/webshop    ${target}    302!`,
+    `/webshop/   ${target}    302!`,
     "",
   ].join("\n");
 }
