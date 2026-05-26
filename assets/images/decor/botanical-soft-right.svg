@@ -4,12 +4,12 @@
       <feGaussianBlur stdDeviation="1.0" />
     </filter>
     <linearGradient id="stemRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#95AA9B" stop-opacity="0.38"/>
-      <stop offset="1" stop-color="#7A8F81" stop-opacity="0.2"/>
+      <stop offset="0" stop-color="#99937a" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#7b755d" stop-opacity="0.2"/>
     </linearGradient>
     <linearGradient id="leafRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#A9BBAE" stop-opacity="0.36"/>
-      <stop offset="1" stop-color="#879B8B" stop-opacity="0.16"/>
+      <stop offset="0" stop-color="#c7c1ae" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#9d977f" stop-opacity="0.16"/>
     </linearGradient>
   </defs>
 

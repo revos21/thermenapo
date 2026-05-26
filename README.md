@@ -79,19 +79,55 @@ thermen-apotheke/
 
 ### Netlify Forms (Kontaktformular)
 
-- Das Formular in `kontakt/index.html` ist für Netlify Forms vorbereitet (`data-netlify="true"` und Honeypot).
+- Das Formular in `kontakt/index.html` ist für Netlify Forms vorbereitet (`data-netlify="true"`, Honeypot, Pflicht-Checkbox für Datenschutz).
 - Nach dem Absenden wird auf `kontakt/danke/` weitergeleitet.
-- Jede Einsendung erscheint in Netlify unter **Forms**.
+- Jede Einsendung erscheint in Netlify unter **Forms** (inkl. Feld `privacy-consent`).
 
-### E-Mail-Empfänger per Environment Variables
+### Kontaktformular – Setup & Betrieb
 
-Für die automatische Mail-Benachrichtigung über die Netlify Function `netlify/functions/submission-created.mjs`:
+#### Environment Variables (Netlify → Site settings → Environment variables)
 
-- `RESEND_API_KEY` – API-Key von Resend
-- `CONTACT_TO_EMAIL` – Empfängeradresse (z. B. office@domain.at)
-- `CONTACT_FROM_EMAIL` – Absenderadresse (optional, Default: `onboarding@resend.dev`)
+| Variable | Zweck | Beispiel |
+|----------|--------|----------|
+| `RESEND_API_KEY` | Authentifizierung bei Resend | `re_…` |
+| `CONTACT_TO_EMAIL` | Empfänger (Microsoft-365-Postfach der Apo) | `thermenapo.waltersdorf@aon.at` |
+| `CONTACT_FROM_EMAIL` | Absender (Domain muss in Resend verifiziert sein) | `kontakt@ihre-domain.at` |
+| `PARTNER_SHOP_URL` | Ziel-URL für `/webshop/`-Redirect | `https://partner-apotheke.at/shop` |
 
-Diese Variablen setzt du in Netlify unter **Site settings → Environment variables**.
+#### Einrichtung (Reihenfolge)
+
+1. **Deploy auf Netlify** – Formular „contact“ erscheint unter *Forms* nach dem ersten Deploy.
+2. **Resend-Konto** – Domain verifizieren (SPF/DKIM laut Resend-Dashboard), API-Key erzeugen.
+3. **Env-Variablen setzen** – danach **Redeploy** (Functions lesen Env erst nach Deploy).
+4. **Function prüfen** – `netlify/functions/submission-created.mjs` wird bei jeder Form-Submission automatisch ausgelöst.
+5. **Microsoft 365** – Postfach unter `CONTACT_TO_EMAIL` empfangsbereit halten; ggf. Spam-Regel für Absender-Domain.
+6. **Optional in Netlify UI** – zusätzliche E-Mail-Benachrichtigung unter *Forms* als Fallback; Spam/hCaptcha unter *Site settings → Forms*.
+7. **Test** – Formular mit Datenschutz-Checkbox absenden → Eintrag in Netlify Forms + E-Mail im M365-Postfach.
+
+#### Ablauf
+
+Netlify Forms → Function `submission-created` → Resend API → Microsoft-365-Postfach (`CONTACT_TO_EMAIL`).
+
+Keine Azure App-Registrierung oder Microsoft-SMTP-Passwörter nötig – Resend übernimmt den Versand, die Apotheke empfängt im Microsoft-Postfach.
+
+### Partner-Webshop (Produktseiten)
+
+Auf allen Produktseiten ist der Button **„Produkte im Online-Shop“** dauerhaft sichtbar (unter dem Beratungs-CTA). Ein Klick führt über `/webshop/` weiter – die Ziel-URL wird beim Deploy gesetzt:
+
+- `PARTNER_SHOP_URL` – vollständige URL zum externen Shop (z. B. `https://partner-apotheke.at/shop`)
+
+Das Build-Script [scripts/inject-env.mjs](scripts/inject-env.mjs) schreibt [`_redirects`](_redirects) für Netlify (`/webshop/` → Partner-URL). Ohne gesetzte Variable leitet `/webshop/` auf `/kontakt/` um. Lokal testen:
+
+```bash
+PARTNER_SHOP_URL="https://example.com/shop" node scripts/inject-env.mjs
+```
+
+Für lokale Redirects am besten `netlify dev` nutzen; mit `npx serve` greift die Fallback-Seite unter [webshop/index.html](webshop/index.html).
+
+## Rechtliches
+
+- **Impressum:** Inhalt unter `content/pages/impressum.json` bzw. `impressum/index.html` – bei Änderungen beide anpassen oder nur HTML pflegen.
+- **Datenschutz:** Strukturierte DSGVO-Erklärung in `datenschutz/index.html`; abschließende Prüfung durch Rechtsberater empfohlen.
 
 ## Kontaktdaten (zentral)
 
@@ -100,11 +136,6 @@ Diese Variablen setzt du in Netlify unter **Site settings → Environment variab
 - **E-Mail:** thermenapo.waltersdorf@aon.at  
 - **Öffnungszeiten:** Mo–Fr 08:00–12:30 und 14:30–18:00, Sa 08:00–12:00  
 - **Nachtdienst:** 1455, [apotheker.or.at](https://www.apotheker.or.at/nachtdienst)
-
-## Rechtliches
-
-- **Impressum:** Inhalt unter `content/pages/impressum.json` bzw. `impressum/index.html` – bei Änderungen beide anpassen oder nur HTML pflegen.
-- **Datenschutz:** Aktuell Platzhalter. Rechtssichere DSGVO-Erklärung vom Projekt/Rechtsberater einholen und in `datenschutz/index.html` einfügen.
 
 ## Texte ändern
 

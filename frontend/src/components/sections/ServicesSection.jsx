@@ -12,7 +12,7 @@ export function ServicesSection() {
     <MotionSection className="mx-auto mt-24 max-w-5xl px-6 md:px-10">
       <div className="grid gap-8 md:grid-cols-[0.95fr_1.05fr]">
         <div>
-          <p className="mb-2 text-xs font-semibold tracking-[0.08em] text-[#0d5c63] uppercase">Leistungen</p>
+          <p className="mb-2 text-xs font-semibold tracking-[0.08em] text-primary-dark uppercase">Leistungen</p>
           <h2 className="font-editorial text-4xl leading-tight tracking-[-0.015em] text-[#232220]">Was Sie bei uns erwarten duerfen</h2>
           <p className="mt-4 max-w-md leading-7 text-[#3a3834]">
             Klare Beratung, kurze Wege und ein Sortiment, das zu Ihrem Alltag passt.

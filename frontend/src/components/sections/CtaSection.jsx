@@ -9,10 +9,10 @@ export function CtaSection() {
           Vereinbaren Sie Ihre persoenliche Beratung oder planen Sie direkt Ihre Route zur Thermen Apotheke.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <button className="rounded-xl border border-[#0f5e66] bg-gradient-to-br from-[#14717a] to-[#0d5c63] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(13,92,99,0.28)] transition hover:scale-[1.02]">
+          <button className="rounded-xl border border-primary-dark/70 bg-gradient-to-br from-primary to-primary-light px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(107,106,80,0.28)] transition hover:scale-[1.02]">
             Kontakt aufnehmen
           </button>
-          <button className="rounded-xl border border-[#14717a]/35 bg-white/75 px-6 py-3 text-sm font-semibold text-[#0d5c63] transition hover:scale-[1.02]">
+          <button className="rounded-xl border border-primary/35 bg-white/75 px-6 py-3 text-sm font-semibold text-primary-dark transition hover:scale-[1.02]">
             Route planen
           </button>
         </div>

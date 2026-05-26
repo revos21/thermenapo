@@ -21,7 +21,7 @@ export function BenefitsSection() {
             whileHover={{ scale: 1.02, y: -3 }}
             className={`rounded-3xl border border-[#e4d6c4] p-6 shadow-[0_6px_16px_rgba(35,34,32,0.06)] transition ${
               card.featured
-                ? 'bg-[radial-gradient(circle_at_12%_10%,rgba(20,113,122,0.14),transparent_32%),#fffdfa]'
+                ? 'bg-[radial-gradient(circle_at_12%_10%,rgba(107,106,80,0.14),transparent_32%),#fffdfa]'
                 : 'bg-[#fffdfa]'
             } ${card.offset ? 'md:translate-y-4' : ''}`}
           >

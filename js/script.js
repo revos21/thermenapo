@@ -211,3 +211,36 @@
     });
   });
 })();
+
+(function () {
+  var form = document.querySelector('form[name="contact"]');
+  if (!form) return;
+
+  var consent = form.querySelector('#privacy-consent');
+  var consentField = form.querySelector('[data-consent-field]');
+  var error = form.querySelector('#privacy-consent-error');
+  if (!consent || !consentField || !error) return;
+
+  function clearConsentError() {
+    consentField.classList.remove('form-consent--invalid');
+    consent.removeAttribute('aria-invalid');
+    error.hidden = true;
+  }
+
+  function showConsentError() {
+    consentField.classList.add('form-consent--invalid');
+    consent.setAttribute('aria-invalid', 'true');
+    error.hidden = false;
+    consent.focus();
+  }
+
+  consent.addEventListener('change', function () {
+    if (consent.checked) clearConsentError();
+  });
+
+  form.addEventListener('submit', function (event) {
+    if (consent.checked) return;
+    event.preventDefault();
+    showConsentError();
+  });
+})();

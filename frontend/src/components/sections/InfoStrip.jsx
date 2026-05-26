@@ -22,7 +22,7 @@ export function InfoStrip() {
             transition={{ delay: idx * 0.06, duration: 0.4 }}
             className="rounded-2xl border border-[#ede5da] bg-[#fffdfa] p-4"
           >
-            <p className="mb-1 text-[11px] font-bold tracking-[0.08em] text-[#0d5c63] uppercase">{item.label}</p>
+            <p className="mb-1 text-[11px] font-bold tracking-[0.08em] text-primary-dark uppercase">{item.label}</p>
             <p className="text-sm leading-6 text-[#3a3834]">{item.value}</p>
           </motion.article>
         ))}

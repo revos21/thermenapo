@@ -2,7 +2,7 @@
   "page": "/produkte/",
   "seo": {
     "title": "Produkte – Thermen Apotheke Bad Waltersdorf",
-    "description": "Immunsystem, Kosmetik, Homöopathie, Naturprodukte und Aromatherapie. Entdecken Sie unser Sortiment in Bad Waltersdorf."
+    "description": "Immunsystem, Kosmetik, Naturprodukte und Aromatherapie. Entdecken Sie unser Sortiment in Bad Waltersdorf."
   },
   "hero": {
     "h1": "Werfen Sie einen Blick in die Produkt-Vielfalt unserer Apotheke",
@@ -26,7 +26,8 @@
       "title": "Homöopathie",
       "excerpt": "Homöopathische Arzneimittel in verschiedenen Darreichungsformen – fachkundig beraten, individuell dosiert.",
       "href": "/produkte/homoeopathie/",
-      "icon": "droplet"
+      "icon": "droplet",
+      "hidden": true
     },
     {
       "title": "Naturprodukte",

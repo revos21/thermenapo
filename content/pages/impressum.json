@@ -16,24 +16,36 @@
         "body": "Thermen Apotheke Bad Waltersdorf\nBad Waltersdorf 6\n8271 Bad Waltersdorf\nÖsterreich"
       },
       {
+        "title": "Unternehmensangaben",
+        "body": "Rechtsform: [Rechtsform eintragen]\nUID-Nummer: [UID-Nummer eintragen]\nFirmenbuchnummer: [Firmenbuchnummer eintragen, falls zutreffend]"
+      },
+      {
         "title": "Kontakt",
         "body": "Telefon: +43 3333 3970\nE-Mail: thermenapo.waltersdorf@aon.at"
       },
       {
         "title": "Aufsichtsbehörde",
-        "body": "Zuständige Behörde: Landesgeschäftsstelle der Österreichischen Apothekerkammer (Steiermark)."
+        "body": "Zuständige Behörde: Landesgeschäftsstelle der Österreichischen Apothekerkammer (Steiermark).\nwww.apotheker.or.at"
       },
       {
         "title": "Berufsrechtliche Angaben",
-        "body": "Berufsbezeichnung: Apothekerin/Apotheker (verliehen in Österreich)."
+        "body": "Berufsbezeichnung: Apothekerin/Apotheker (verliehen in Österreich).\nEs gelten die berufsrechtlichen Bestimmungen für Apothekerinnen und Apotheker in Österreich, insbesondere das Apothekengesetz (ApoG) und die Apothekenbetriebsordnung (ApoBO)."
       },
       {
         "title": "Redaktionell verantwortlich",
-        "body": "Mag. Pharm. Doris Pieler / Mag. Pharm. Anna Katharina Wurzer, Bad Waltersdorf 6, 8271 Bad Waltersdorf."
+        "body": "Mag. Pharm. Doris Pieler / Mag. Pharm. Anna Katharina Wurzer\nBad Waltersdorf 6, 8271 Bad Waltersdorf"
+      },
+      {
+        "title": "EU-Streitschlichtung",
+        "body": "Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/consumers/odr/\nKeine Verpflichtung zur Teilnahme an Verbraucherschlichtung."
+      },
+      {
+        "title": "Urheberrecht",
+        "body": "Inhalte und Werke unterliegen dem österreichischen Urheberrecht. Verwertung außerhalb der gesetzlichen Grenzen nur mit Zustimmung der Rechteinhaber."
       },
       {
         "title": "Haftungsausschluss",
-        "body": "Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Links zu externen Websites liegen außerhalb unseres Verantwortungsbereichs."
+        "body": "Keine Gewähr für Richtigkeit, Vollständigkeit und Aktualität. Externe Links (Nachtdienst, Karten, Online-Shop der Apothekengruppe) liegen außerhalb unseres Verantwortungsbereichs; Bestellung und Datenschutz erfolgen auf der Zielwebsite."
       }
     ]
   }

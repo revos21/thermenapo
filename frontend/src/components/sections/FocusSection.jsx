@@ -19,12 +19,12 @@ export function FocusSection() {
             whileHover={{ scale: 1.02, y: -2 }}
             transition={{ duration: 0.2 }}
             className={`rounded-3xl border border-[#e5d8c8] p-6 shadow-[0_6px_16px_rgba(35,34,32,0.06)] ${
-              card.big ? 'md:col-span-2 bg-[linear-gradient(145deg,#f2f7f2_0%,#fffdf8_100%)]' : 'bg-[#fffdfa]'
+              card.big ? 'md:col-span-2 bg-[linear-gradient(145deg,#f2efe7_0%,#fffdf8_100%)]' : 'bg-[#fffdfa]'
             }`}
           >
             <h3 className="font-editorial text-2xl text-[#232220]">{card.title}</h3>
             <p className="mt-3 text-[15px] leading-7 text-[#3a3834]">{card.text}</p>
-            <a className="mt-4 inline-block text-sm font-semibold text-[#0d5c63]" href="#0">
+            <a className="mt-4 inline-block text-sm font-semibold text-primary-dark" href="#0">
               Mehr erfahren
             </a>
           </motion.article>

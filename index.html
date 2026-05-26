@@ -37,7 +37,7 @@
   </header>
 
   <main>
-    <section class="hero hero-reference">
+    <section class="hero page-hero hero-reference">
       <div class="hero-bg"></div>
       <div class="hero-image-layer" aria-hidden="true">
         <img src="assets/images/topics/HeroPage1.png" alt="" class="hero-photo">
@@ -46,7 +46,7 @@
         <div class="hero-fade-tone"></div>
       </div>
       <div class="hero-bottom-fade" aria-hidden="true"></div>
-      <div class="hero-content">
+      <div class="hero-inner">
         <p class="hero-kicker">Thermen Apotheke</p>
         <h1 class="hero-title">Ihre Apotheke in Bad Waltersdorf</h1>
         <p class="hero-sub">Persönlich, kompetent und für Sie da – in der Thermenregion Steiermark. Verlässlich im Alltag, erreichbar bei Bedarf und nah an den Menschen.</p>
@@ -55,7 +55,6 @@
           <a href="https://www.apotheker.or.at/nachtdienst" class="btn btn-outline btn-lg" target="_blank" rel="noopener">Notdienst 1455</a>
         </div>
         <div class="hero-trust">
-          <span>Neuübernahme ab 1. Jänner 2026</span>
           <span>Barrierefrei & Parkplätze</span>
           <span>Persönliche Beratung vor Ort</span>
         </div>
@@ -83,7 +82,7 @@
           </span>
           <div>
             <strong>Adresse</strong>
-            <span>Bad Waltersdorf 6, 8271 Bad Waltersdorf</span>
+            <span><a href="kontakt/">Bad Waltersdorf 6, 8271 Bad Waltersdorf</a></span>
           </div>
         </div>
         <div class="quick-info-item">
@@ -116,28 +115,13 @@
       </div>
     </section>
 
-    <section class="announcement-section section-tone-c reveal" aria-label="Wichtige Information und Kernvorteile">
+    <section class="announcement-section section-tone-c reveal" aria-label="Kernvorteile">
       <div class="announcement-atmo" aria-hidden="true"></div>
       <div class="announcement-botanical-left" aria-hidden="true"></div>
       <div class="announcement-botanical-right" aria-hidden="true"></div>
       <div class="announcement-haze" aria-hidden="true"></div>
 
       <div class="section-inner section-inner-narrow">
-        <div class="notice-block">
-          <div class="notice-kicker">Wichtige Information</div>
-          <div class="notice-layout">
-            <div class="notice-main">
-              <h2>Neuübernahme ab 1. Jänner 2026</h2>
-              <p>Mag. Pharm. Doris Pieler und Mag. Pharm. Anna Katharina Wurzer führen die Thermen Apotheke Bad Waltersdorf mit frischem Schwung weiter. Bewährtes bleibt: Ihre gewohnte Beratung, das breite Sortiment und der persönliche Service – jetzt mit dem gleichen Engagement an vertrauter Adresse.</p>
-            </div>
-            <div class="notice-meta">
-              <span class="notice-pill">Leitung</span>
-              <p>Mag. Pharm. Doris Pieler<br>Mag. Pharm. Anna Katharina Wurzer</p>
-              <p><strong>Standort</strong><br>Bad Waltersdorf 6<br>8271 Bad Waltersdorf</p>
-            </div>
-          </div>
-        </div>
-
         <div class="presence-row" data-stagger>
           <article class="presence-card presence-card-featured">
             <strong>Standortnah & schnell erreichbar</strong>
@@ -182,7 +166,17 @@
             <span class="service-label">Schnelle Versorgung</span>
             <h3>Schnelle Versorgung & sichere Medikation</h3>
             <p>Viele Arzneimittel sind sofort verfügbar. Nicht lagernde Präparate organisieren wir in der Regel bis zum nächsten Werktag.</p>
-            <div class="service-media" aria-hidden="true"></div>
+            <div class="service-media">
+              <img
+                src="assets/images/interior/inside/ApoTeewand.png"
+                alt="Teewand in der Thermen Apotheke"
+                class="site-photo"
+                width="1537"
+                height="1023"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
             <p><a href="leistungen/" class="btn btn-primary">Leistungen ansehen</a></p>
           </article>
           <article class="service-card">
@@ -233,16 +227,16 @@
           </article>
           <article class="health-card health-card-tone-2">
             <div class="health-card-content">
-              <h3>Alternativmedizin</h3>
-              <p>Homöopathie, Bachblüten und naturbasierte Ansätze – sachlich erklärt und individuell abgestimmt.</p>
-              <p><a href="produkte/homoeopathie/" class="btn btn-secondary">Homöopathie ansehen</a></p>
+              <h3>Immunsystem &amp; Vitalität</h3>
+              <p>Vitamine, Mineralstoffe und ausgewählte Präparate zur Unterstützung Ihrer Abwehrkräfte – fachkundig beraten.</p>
+              <p><a href="produkte/immunsystemstaerkung/" class="btn btn-secondary">Immunsystem stärken</a></p>
             </div>
           </article>
           <article class="health-card health-card-tone-3">
             <div class="health-card-content">
-              <h3>Ernährung & Mikronährstoffe</h3>
-              <p>Gezielte Unterstützung mit Vitaminen, Mineralstoffen und passenden Produkten für Ihren Alltag.</p>
-              <p><a href="produkte/immunsystemstaerkung/" class="btn btn-secondary">Immunsystem stärken</a></p>
+              <h3>Naturprodukte &amp; Ernährung</h3>
+              <p>Von Tees und pflanzlicher Begleitung bis zu Produkten für Ihren Alltag – naturnah und individuell beraten.</p>
+              <p><a href="produkte/naturprodukte/" class="btn btn-secondary">Naturprodukte entdecken</a></p>
             </div>
           </article>
           <article class="health-card health-card-tone-1">
@@ -263,7 +257,10 @@
             <div class="health-card-content">
               <h3>Besonderes Service</h3>
               <p>Persönliche Betreuung, gute Erreichbarkeit und kurze Wege für Einheimische und Gäste der Thermenregion.</p>
-              <p><a href="kontakt/" class="btn btn-secondary">Kontakt aufnehmen</a></p>
+              <p class="health-card-actions">
+                <a href="kontakt/" class="btn btn-secondary">Kontakt aufnehmen</a>
+                <a href="/webshop/" class="btn btn-outline health-card-shop" target="_blank" rel="noopener noreferrer">Online-Shop</a>
+              </p>
             </div>
           </article>
         </div>
@@ -373,7 +370,7 @@
       <div class="section-inner">
         <div class="trust-layout">
           <div class="trust-image">
-            <div class="image-placeholder team" aria-hidden="true"></div>
+            <img src="assets/images/interior/inside/AnnaundKollegin.png" alt="Mag. Pharm. Doris Pieler und Mag. Pharm. Anna Katharina Wurzer in der Thermen Apotheke" class="site-photo" width="1536" height="1024" loading="lazy" decoding="async">
           </div>
           <div class="trust-content">
             <h2 class="section-title">Vertrauen durch Menschen vor Ort</h2>
@@ -396,7 +393,7 @@
       <div class="homogeneous-overlay homogeneous-overlay-bottom-wash" aria-hidden="true"></div>
       <div class="thermen-inner">
         <div class="thermen-image">
-          <div class="image-placeholder" aria-hidden="true"></div>
+          <img src="assets/images/interior/outside/ApoOutside.png" alt="Thermen Apotheke Bad Waltersdorf von außen" class="site-photo" width="1536" height="1024" loading="lazy" decoding="async">
         </div>
         <div class="thermen-content">
           <h2 class="section-title">Anfahrt & Erreichbarkeit</h2>

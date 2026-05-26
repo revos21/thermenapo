@@ -12,10 +12,6 @@
       { "label": "Nachtdienst 1455", "href": "https://www.apotheker.or.at/nachtdienst", "primary": false }
     ]
   },
-  "notice": {
-    "title": "Neuübernahme ab 1. Jänner 2026",
-    "body": "Mag. Pharm. Doris Pieler und Mag. Pharm. Anna Katharina Wurzer führen die Thermen Apotheke Bad Waltersdorf mit frischem Schwung weiter. Bewährtes bleibt: Ihre gewohnte Beratung, das breite Sortiment und der persönliche Service – jetzt mit dem gleichen Engagement an vertrauter Adresse."
-  },
   "sections": [
     {
       "id": "services",

@@ -10,7 +10,45 @@
     "ctas": []
   },
   "legal": {
-    "placeholder": true,
-    "notice": "Die vollständige, rechtssichere Datenschutzerklärung wird vom Projekt/Rechtsberater bereitgestellt. Bitte die Legal-Version (DSGVO-konform) aus dem Projekt anfordern und hier einfügen. Bis dahin gilt: Wir behandeln Ihre Daten vertraulich und nur im Rahmen der gesetzlichen Vorgaben."
+    "placeholder": false,
+    "updated": "2026-05",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "body": "Thermen Apotheke Bad Waltersdorf, Bad Waltersdorf 6, 8271 Bad Waltersdorf"
+      },
+      {
+        "title": "Allgemeines",
+        "body": "Informations- und Kontaktwebsite ohne eigenen Webshop."
+      },
+      {
+        "title": "Hosting",
+        "body": "Netlify – Server-Logfiles, Art. 6 Abs. 1 lit. f DSGVO"
+      },
+      {
+        "title": "Kontaktformular",
+        "body": "Netlify Forms + Resend, Pflicht-Einwilligung per Checkbox (Art. 6 Abs. 1 lit. a DSGVO), Widerruf per E-Mail"
+      },
+      {
+        "title": "Google Fonts",
+        "body": "Externer Abruf fonts.googleapis.com / fonts.gstatic.com"
+      },
+      {
+        "title": "Google Maps",
+        "body": "Embed auf Kontaktseite"
+      },
+      {
+        "title": "Externe Links",
+        "body": "Nachtdienst, Maps, Online-Shop Apothekengruppe"
+      },
+      {
+        "title": "Cookies",
+        "body": "Keine Marketing-/Tracking-Cookies"
+      },
+      {
+        "title": "Betroffenenrechte",
+        "body": "Auskunft, Berichtigung, Löschung, Beschwerde bei DSB"
+      }
+    ]
   }
 }

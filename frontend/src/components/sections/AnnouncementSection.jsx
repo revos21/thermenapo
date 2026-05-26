@@ -6,20 +6,20 @@ export function AnnouncementSection() {
         style={{
           background: `
             radial-gradient(circle at 18% 22%, rgba(255,255,255,0.42), transparent 36%),
-            radial-gradient(circle at 78% 86%, rgba(208,222,212,0.22), transparent 34%),
-            linear-gradient(to bottom, #f3efe8 0%, #f6f2eb 54%, #eef4ef 100%)
+            radial-gradient(circle at 78% 86%, rgba(200,195,178,0.22), transparent 34%),
+            linear-gradient(to bottom, #f3efe8 0%, #f6f2eb 54%, #ebe6da 100%)
           `,
         }}
       />
 
-      <div className="pointer-events-none absolute bottom-[86px] left-[-24px] z-0 h-[220px] w-[220px] rounded-full bg-[radial-gradient(circle,rgba(158,178,163,0.18)_0%,rgba(158,178,163,0.08)_35%,transparent_70%)] blur-xl sm:h-[280px] sm:w-[280px] lg:h-[340px] lg:w-[340px]" />
-      <div className="pointer-events-none absolute bottom-[110px] right-[-28px] z-0 h-[240px] w-[240px] rounded-full bg-[radial-gradient(circle,rgba(158,178,163,0.16)_0%,rgba(158,178,163,0.07)_36%,transparent_70%)] blur-xl sm:h-[300px] sm:w-[300px] lg:h-[380px] lg:w-[380px]" />
+      <div className="pointer-events-none absolute bottom-[86px] left-[-24px] z-0 h-[220px] w-[220px] rounded-full bg-[radial-gradient(circle,rgba(200,195,178,0.18)_0%,rgba(200,195,178,0.08)_35%,transparent_70%)] blur-xl sm:h-[280px] sm:w-[280px] lg:h-[340px] lg:w-[340px]" />
+      <div className="pointer-events-none absolute bottom-[110px] right-[-28px] z-0 h-[240px] w-[240px] rounded-full bg-[radial-gradient(circle,rgba(200,195,178,0.16)_0%,rgba(200,195,178,0.07)_36%,transparent_70%)] blur-xl sm:h-[300px] sm:w-[300px] lg:h-[380px] lg:w-[380px]" />
 
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-[180px]"
         style={{
           background:
-            'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(231,241,236,0.45) 100%)',
+            'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(223,217,204,0.45) 100%)',
         }}
       />
 
@@ -32,7 +32,7 @@ export function AnnouncementSection() {
         >
           <path
             d="M0,90 C180,140 300,20 520,70 C760,124 900,40 1120,70 C1260,88 1360,120 1440,112 L1440,180 L0,180 Z"
-            fill="rgba(223,236,231,0.72)"
+            fill="rgba(223,217,204,0.72)"
           />
         </svg>
       </div>
@@ -40,7 +40,7 @@ export function AnnouncementSection() {
       <div className="relative z-10 mx-auto max-w-[1180px] px-5 sm:px-8 lg:px-10">
         <div className="grid items-start gap-8 lg:grid-cols-[1.65fr_0.95fr] lg:gap-10">
           <div className="max-w-[760px]">
-            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#6f8d7d]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-primary-dark">
               Wichtige Information
             </p>
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-label="Innenraum der Apotheke in warmen Naturtoenen">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f1e9"/>
+      <stop offset="0.52" stop-color="#ece6db"/>
+      <stop offset="1" stop-color="#ddd6c8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#f2ede5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a795d" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#6b6a50" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="220" cy="260" r="180" fill="#fffdf8" opacity="0.78"/>
+  <circle cx="1000" cy="220" r="140" fill="#efe8dc" opacity="0.9"/>
+  <rect x="120" y="170" width="960" height="1180" rx="42" fill="url(#panel)"/>
+  <rect x="190" y="250" width="320" height="860" rx="28" fill="#e8e1d4"/>
+  <rect x="550" y="250" width="460" height="860" rx="28" fill="#f6f1e9"/>
+
+  <g opacity="0.9">
+    <rect x="230" y="330" width="240" height="26" rx="13" fill="#d7cfbf"/>
+    <rect x="230" y="450" width="240" height="26" rx="13" fill="#d7cfbf"/>
+    <rect x="230" y="570" width="240" height="26" rx="13" fill="#d7cfbf"/>
+    <rect x="230" y="690" width="240" height="26" rx="13" fill="#d7cfbf"/>
+    <rect x="230" y="810" width="240" height="26" rx="13" fill="#d7cfbf"/>
+    <rect x="230" y="930" width="240" height="26" rx="13" fill="#d7cfbf"/>
+  </g>
+
+  <g opacity="0.7">
+    <rect x="605" y="360" width="95" height="320" rx="18" fill="#d8d0bf"/>
+    <rect x="725" y="320" width="95" height="360" rx="18" fill="#e0d8c7"/>
+    <rect x="845" y="390" width="95" height="290" rx="18" fill="#d8d0bf"/>
+    <rect x="620" y="740" width="300" height="220" rx="26" fill="#eee7dc"/>
+  </g>
+
+  <g>
+    <ellipse cx="730" cy="1110" rx="140" ry="170" fill="#cfc5b3"/>
+    <circle cx="730" cy="940" r="82" fill="#e8e1d5"/>
+    <path d="M648 938c18-72 147-72 165 0 10 42-4 82-20 116-19 40-42 66-62 66-21 0-46-26-65-68-15-32-28-72-18-114z" fill="url(#accent)"/>
+  </g>
+
+  <rect x="520" y="1270" width="420" height="32" rx="16" fill="#d2cab9"/>
+  <rect x="570" y="1318" width="320" height="20" rx="10" fill="#c4bba8"/>
+</svg>

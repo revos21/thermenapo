@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = "echo 'Static site - no build step required'"
+  command = "node scripts/inject-env.mjs"
 
 [build.environment]
   NODE_VERSION = "20"

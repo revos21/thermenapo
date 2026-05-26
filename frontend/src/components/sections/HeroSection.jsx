@@ -18,24 +18,30 @@ const textItem = {
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-28 md:px-10">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_14%,rgba(20,113,122,0.14),transparent_34%),radial-gradient(circle_at_78%_8%,rgba(191,208,194,0.52),transparent_30%),linear-gradient(152deg,#f8f5f0_0%,#f0ebe2_42%,#e9e2d6_100%)]" />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(circle at 18% 14%, rgba(107,106,80,0.14), transparent 34%), radial-gradient(circle at 78% 8%, rgba(200,195,178,0.52), transparent 30%), linear-gradient(152deg, #f8f5f0 0%, #f0ebe2 42%, #e9e2d6 100%)',
+        }}
+      />
       <div className="pointer-events-none absolute inset-0 backdrop-blur-[1px]" />
       <motion.div
         aria-hidden
         animate={{ y: [0, -10, 0], opacity: [0.42, 0.58, 0.42] }}
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-        className="pointer-events-none absolute -right-28 top-14 h-80 w-80 rounded-full bg-[#14717a]/15 blur-3xl"
+        className="pointer-events-none absolute -right-28 top-14 h-80 w-80 rounded-full bg-primary/15 blur-3xl"
       />
       <motion.div
         aria-hidden
         animate={{ x: [0, 16, 0], opacity: [0.34, 0.52, 0.34] }}
         transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-        className="pointer-events-none absolute -left-20 bottom-2 h-72 w-72 rounded-full bg-[#728b7a]/18 blur-3xl"
+        className="pointer-events-none absolute -left-20 bottom-2 h-72 w-72 rounded-full bg-accent-soft/18 blur-3xl"
       />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.02fr_0.98fr]">
         <motion.div variants={textStagger} initial="hidden" whileInView="show" viewport={{ once: true }}>
-          <motion.p variants={textItem} className="mb-3 text-xs font-semibold tracking-[0.1em] text-[#0d5c63] uppercase">
+          <motion.p variants={textItem} className="mb-3 text-xs font-semibold tracking-[0.1em] text-primary-dark uppercase">
             Thermen Apotheke
           </motion.p>
 
@@ -52,14 +58,14 @@ export function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.18 }}
-              className="rounded-xl border border-[#0f5e66] bg-gradient-to-br from-[#14717a] to-[#0d5c63] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(13,92,99,0.28)] transition hover:shadow-[0_12px_28px_rgba(13,92,99,0.34)]"
+              className="rounded-xl border border-primary-dark/70 bg-gradient-to-br from-primary to-primary-light px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(107,106,80,0.28)] transition hover:shadow-[0_12px_28px_rgba(107,106,80,0.34)]"
             >
               Jetzt beraten lassen
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.18 }}
-              className="rounded-xl border border-[#14717a]/40 bg-white/70 px-6 py-3 text-sm font-semibold text-[#0d5c63] transition hover:bg-white hover:shadow-[0_8px_20px_rgba(35,34,32,0.08)]"
+              className="rounded-xl border border-primary/40 bg-white/70 px-6 py-3 text-sm font-semibold text-primary-dark transition hover:bg-white hover:shadow-[0_8px_20px_rgba(35,34,32,0.08)]"
             >
               Anrufen
             </motion.button>
@@ -91,7 +97,13 @@ export function HeroSection() {
               className="h-[560px] w-full object-cover object-center md:h-[640px]"
             />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(245,242,236,0.74)_0%,rgba(245,242,236,0.24)_38%,rgba(245,242,236,0.04)_74%)]" />
-            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)_0%,rgba(255,255,255,0.0)_36%,rgba(14,124,134,0.08)_100%)]" />
+            <div
+              className="pointer-events-none absolute inset-0"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 36%, rgba(107,106,80,0.08) 100%)',
+              }}
+            />
           </div>
         </motion.div>
       </div>

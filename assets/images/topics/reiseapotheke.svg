@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Reiseapotheke Illustration">
-  <rect width="1200" height="675" fill="#f4f8f4"/>
+  <rect width="1200" height="675" fill="#f2eee6"/>
   <rect x="130" y="140" width="940" height="420" rx="42" fill="#ffffff"/>
-  <rect x="180" y="190" width="330" height="320" rx="26" fill="#dfeee0"/>
+  <rect x="180" y="190" width="330" height="320" rx="26" fill="#e3dccf"/>
   <rect x="560" y="190" width="460" height="320" rx="26" fill="#f3ebe0"/>
-  <rect x="670" y="265" width="170" height="170" rx="24" fill="#0e7c86" opacity="0.9"/>
+  <rect x="670" y="265" width="170" height="170" rx="24" fill="#6b6a50" opacity="0.9"/>
   <path d="M755 305 v90 M710 350 h90" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
-  <rect x="250" y="255" width="110" height="190" rx="14" fill="#0e7c86" opacity="0.2"/>
-  <rect x="380" y="285" width="90" height="160" rx="12" fill="#0e7c86" opacity="0.28"/>
-  <circle cx="300" cy="225" r="12" fill="#0e7c86"/>
-  <circle cx="460" cy="255" r="10" fill="#0e7c86"/>
+  <rect x="250" y="255" width="110" height="190" rx="14" fill="#6b6a50" opacity="0.2"/>
+  <rect x="380" y="285" width="90" height="160" rx="12" fill="#6b6a50" opacity="0.28"/>
+  <circle cx="300" cy="225" r="12" fill="#6b6a50"/>
+  <circle cx="460" cy="255" r="10" fill="#6b6a50"/>
 </svg>
