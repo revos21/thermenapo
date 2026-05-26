@@ -2933,6 +2933,107 @@
     border-color: var(--primary);
   }
 
+  /* ---------- Contact page (kontakt/) ---------- */
+  .contact-page .page-hero.contact-page-hero {
+    min-height: auto;
+    padding: max(72px, calc(var(--header-h) + 24px)) 24px 40px;
+  }
+
+  .contact-page-primary {
+    background: var(--surface-warm);
+    padding: 48px 24px 56px;
+    border-top: 1px solid var(--border-warm);
+    border-bottom: 1px solid var(--border-warm);
+  }
+
+  .contact-page-form-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .contact-page-form-wrap .section-eyebrow {
+    margin-bottom: 10px;
+  }
+
+  .contact-page-form-wrap .section-title {
+    margin-bottom: 12px;
+  }
+
+  .contact-page-form-lead {
+    margin-bottom: 28px;
+    max-width: 56ch;
+  }
+
+  .contact-page .contact-form-card--page {
+    margin-top: 0;
+    padding: 32px 28px 28px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-page .contact-form form {
+    max-width: none;
+    width: 100%;
+  }
+
+  .contact-page .contact-form textarea {
+    min-height: 140px;
+  }
+
+  .contact-page-direct {
+    margin: 24px 0 0;
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .contact-page-direct a {
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .contact-page-direct a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-page-location {
+    background: var(--bg);
+  }
+
+  .contact-page .contact-page-location-inner {
+    align-items: stretch;
+  }
+
+  .contact-page .contact-map.contact-visual-card {
+    border-radius: 18px;
+    border: 1px solid var(--border-warm);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    background: var(--bg-warm);
+    height: var(--location-visual-height);
+    min-height: var(--location-visual-height);
+    max-height: none;
+  }
+
+  .contact-page .contact-map.contact-visual-card .map-embed {
+    width: 100%;
+    height: 100%;
+    min-height: var(--location-visual-height);
+    max-height: none;
+    border: 0;
+    outline: none;
+    display: block;
+  }
+
+  .contact-page .contact-info {
+    justify-content: flex-start;
+  }
+
+  .contact-page .contact-shop-aside {
+    max-width: none;
+  }
+
   @media (max-width: 1024px) {
     .thermen-inner, .trust-layout { grid-template-columns: 1fr; }
     .thermen-content { padding: 40px 24px 48px; }
@@ -3157,6 +3258,11 @@
       box-sizing: border-box;
     }
 
+    .contact-page .hero.page-hero.contact-page-hero {
+      min-height: auto;
+      justify-content: center;
+    }
+
     .hero.page-hero::before {
       content: '';
       position: absolute;
@@ -3361,6 +3467,24 @@
       min-height: 74vh;
       min-height: 74dvh;
       padding: max(44px, calc(var(--header-h) + 8px)) max(16px, env(safe-area-inset-left, 0px)) 28px max(16px, env(safe-area-inset-right, 0px));
+    }
+
+    .contact-page .hero.page-hero.contact-page-hero {
+      min-height: auto;
+      padding: max(48px, calc(var(--header-h) + 8px)) max(16px, env(safe-area-inset-left, 0px)) 28px max(16px, env(safe-area-inset-right, 0px));
+      justify-content: center;
+    }
+
+    .contact-page-primary {
+      padding: 36px 16px 44px;
+    }
+
+    .contact-page .contact-form-card--page {
+      padding: 24px 18px 22px;
+    }
+
+    .contact-page-direct {
+      text-align: left;
     }
 
     .hero.page-hero .hero-inner {
