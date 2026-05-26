@@ -1636,7 +1636,66 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     min-height: 0;
-    align-items: start;
+    align-items: stretch;
+  }
+
+  .contact-visual-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-visual-card {
+    width: 100%;
+    height: var(--location-visual-height);
+    min-height: var(--location-visual-height);
+    max-height: var(--location-visual-height);
+    margin: 0;
+    border-radius: 18px;
+    border: 1px solid var(--border-warm);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    background: var(--bg-warm);
+  }
+
+  .contact-visual-stack .contact-photo.contact-visual-card {
+    line-height: 0;
+    border-bottom: 0;
+    box-shadow: 0 10px 28px rgba(25, 22, 18, 0.06);
+  }
+
+  .contact-visual-stack .contact-map.contact-visual-card {
+    border-top: 0;
+    box-shadow: 0 14px 36px rgba(25, 22, 18, 0.07);
+  }
+
+  .contact-photo .site-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: var(--location-visual-height);
+    max-height: var(--location-visual-height);
+    object-fit: cover;
+    object-position: center;
+    vertical-align: top;
+  }
+
+  .contact-visual-stack .contact-map.contact-visual-card {
+    position: relative;
+    align-self: start;
+  }
+
+  .contact-visual-stack .contact-map.contact-visual-card .map-embed {
+    width: 100%;
+    height: 100%;
+    min-height: var(--location-visual-height);
+    max-height: var(--location-visual-height);
+    border: 0;
+    outline: none;
+    display: block;
+    vertical-align: top;
   }
 
   .contact-map .map-placeholder {
@@ -1733,6 +1792,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: stretch;
+    min-height: 100%;
+    height: 100%;
     background: var(--surface-warm);
     border-left: 1px solid var(--border-warm);
   }
@@ -2875,6 +2937,7 @@
     .thermen-inner, .trust-layout { grid-template-columns: 1fr; }
     .thermen-content { padding: 40px 24px 48px; }
     .contact-inner { grid-template-columns: 1fr; }
+    .contact-visual-stack { gap: 16px; }
     .contact-map .map-placeholder {
       min-height: var(--location-visual-height);
       height: var(--location-visual-height);
