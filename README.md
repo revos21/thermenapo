@@ -112,17 +112,42 @@ Keine Azure App-Registrierung oder Microsoft-SMTP-Passwörter nötig – Resend 
 
 ### Partner-Webshop (Produktseiten)
 
-Auf allen Produktseiten ist der Button **„Produkte im Online-Shop“** dauerhaft sichtbar (unter dem Beratungs-CTA). Ein Klick führt über `/webshop/` weiter – die Ziel-URL wird beim Deploy gesetzt:
+Auf allen Produktseiten ist der Button **„Produkte im Online-Shop“** dauerhaft sichtbar (unter dem Beratungs-CTA). Die Ziel-URL wird beim Deploy gesetzt:
 
 - `PARTNER_SHOP_URL` – vollständige URL zum externen Shop (z. B. `https://partner-apotheke.at/shop`)
 
-Das Build-Script [scripts/inject-env.mjs](scripts/inject-env.mjs) schreibt [`_redirects`](_redirects) für Netlify (`/webshop/` → Partner-URL, mit erzwungenem Redirect `302!`, damit nicht die statische Seite [webshop/index.html](webshop/index.html) Vorrang hat). Variable unter **Site configuration → Environment variables** setzen (Build-Scope reicht), danach **Redeploy**. Ohne gesetzte Variable leitet `/webshop/` auf `/kontakt/` um. Lokal testen:
+Das Build-Script [scripts/inject-env.mjs](scripts/inject-env.mjs) macht beim Netlify-Build drei Dinge:
+
+1. [`_redirects`](_redirects) mit erzwungenem Redirect `302!` (`/webshop/` → Partner-URL)
+2. [webshop/index.html](webshop/index.html) – Meta-Refresh und JavaScript-Fallback auf die Partner-URL
+3. Shop-Buttons in 11 Seiten – bei gesetzter Variable direkt `href="https://…"` statt `/webshop/`
+
+**Netlify einrichten**
+
+| Punkt | Erwartung |
+|--------|-----------|
+| Variablenname | exakt `PARTNER_SHOP_URL` |
+| Wert | vollständige URL mit `https://` (ohne Anführungszeichen im UI) |
+| Scope | **Build** oder „All scopes“ |
+| Nach Änderung | **Clear cache and deploy site** |
+
+**Deploy-Log prüfen** (Build command output):
+
+- `inject-env: partner shop enabled` → Variable wurde gelesen, Weiterleitung aktiv
+- `inject-env: partner shop fallback to /kontakt/` → Variable beim Build leer (Name/Scope/Branch prüfen)
+
+**Fehlerindikator:** Erscheint die Zwischenseite mit Überschrift **„Partner-Webshop“**, greift die Partner-URL nicht (Redirect/Env/Deploy). Nach Fix: Klick auf Online-Shop öffnet direkt den externen Shop.
+
+Ohne gesetzte Variable: `/webshop/` → `/kontakt/`, Buttons bleiben auf `/webshop/`.
+
+Lokal testen:
 
 ```bash
 PARTNER_SHOP_URL="https://example.com/shop" node scripts/inject-env.mjs
+git checkout -- index.html ueber-uns/index.html leistungen/index.html team/index.html kontakt/index.html produkte/index.html produkte/kosmetik/index.html produkte/aromatherapie/index.html produkte/naturprodukte/index.html produkte/homoeopathie/index.html produkte/immunsystemstaerkung/index.html webshop/index.html
 ```
 
-Für lokale Redirects am besten `netlify dev` nutzen; mit `npx serve` greift die Fallback-Seite unter [webshop/index.html](webshop/index.html).
+Für lokale Redirects am besten `netlify dev` nutzen; mit `npx serve` ohne vorheriges `inject-env` bleibt die Fallback-Seite unter [webshop/index.html](webshop/index.html).
 
 ## Rechtliches
 
