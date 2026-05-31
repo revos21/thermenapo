@@ -21,6 +21,7 @@ export default async (req) => {
     const formName = payload?.payload?.form_name || "contact";
     const name = data.name || "(kein Name)";
     const email = data.email || "(keine E-Mail)";
+    const phone = (data.phone || "").trim() || "(keine Telefonnummer)";
     const message = data.message || "(keine Nachricht)";
     const privacyConsent = data["privacy-consent"] === "yes" ? "bestätigt" : "nicht bestätigt";
 
@@ -30,6 +31,7 @@ export default async (req) => {
       <p><strong>Formular:</strong> ${formName}</p>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>E-Mail:</strong> ${email}</p>
+      <p><strong>Telefon:</strong> ${phone}</p>
       <p><strong>Datenschutz:</strong> ${privacyConsent}</p>
       <p><strong>Nachricht:</strong></p>
       <p>${String(message).replace(/\n/g, "<br>")}</p>

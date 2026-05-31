@@ -11,3 +11,8 @@
   from = "/kontakt/danke"
   to = "/kontakt/danke/"
   status = 301
+
+[[redirects]]
+  from = "/kontakt/fehler"
+  to = "/kontakt/fehler/"
+  status = 301

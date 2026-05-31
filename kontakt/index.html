@@ -55,11 +55,13 @@
         <p class="section-eyebrow">Kontaktformular</p>
         <h2 class="section-title" id="contact-form-heading">Schreiben Sie uns</h2>
         <p class="section-lead contact-page-form-lead">Wir melden uns so bald wie möglich bei Ihnen. Ihre Angaben werden nur zur Bearbeitung Ihrer Anfrage verwendet.</p>
+        <div id="form-submit-status" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
         <div class="contact-form contact-form-card contact-form-card--page">
           <form
             name="contact"
             method="post"
             action="/kontakt/danke/"
+            data-contact-form
             data-netlify="true"
             data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">
@@ -70,6 +72,8 @@
             <input type="text" id="name" name="name" required autocomplete="name">
             <label for="email">E-Mail *</label>
             <input type="email" id="email" name="email" required autocomplete="email">
+            <label for="phone">Telefon <span class="form-optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="z. B. 03333 123456">
             <label for="message">Nachricht *</label>
             <textarea id="message" name="message" required></textarea>
             <div class="form-consent" data-consent-field>
@@ -82,7 +86,7 @@
               </p>
             </div>
             <p class="contact-form-note">Dieses Formular ist mit Spam-Schutz (Honeypot; ggf. hCaptcha) versehen.</p>
-            <button type="submit" class="btn btn-primary btn-lg">Nachricht senden</button>
+            <button type="submit" class="btn btn-primary btn-lg" data-submit-label="Nachricht senden">Nachricht senden</button>
           </form>
         </div>
         <p class="contact-page-direct">

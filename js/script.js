@@ -213,34 +213,123 @@
 })();
 
 (function () {
-  var form = document.querySelector('form[name="contact"]');
+  var form = document.querySelector('form[data-contact-form]');
   if (!form) return;
 
   var consent = form.querySelector('#privacy-consent');
   var consentField = form.querySelector('[data-consent-field]');
-  var error = form.querySelector('#privacy-consent-error');
-  if (!consent || !consentField || !error) return;
+  var consentError = form.querySelector('#privacy-consent-error');
+  var statusEl = document.getElementById('form-submit-status');
+  var submitBtn = form.querySelector('button[type="submit"]');
+  if (!consent || !consentField || !consentError || !statusEl || !submitBtn) return;
+
+  var submitLabel = submitBtn.getAttribute('data-submit-label') || submitBtn.textContent.trim();
+  var sendingLabel = 'Wird gesendet…';
+  var errorHtml =
+    'Ihre Nachricht konnte gerade nicht gesendet werden. Bitte versuchen Sie es in ein paar Minuten erneut oder rufen Sie uns an: ' +
+    '<a href="tel:+4333333970">03333 3970</a>. ' +
+    '<a href="/kontakt/fehler/">Zur Fehlerhilfe</a>';
 
   function clearConsentError() {
     consentField.classList.remove('form-consent--invalid');
     consent.removeAttribute('aria-invalid');
-    error.hidden = true;
+    consentError.hidden = true;
   }
 
   function showConsentError() {
     consentField.classList.add('form-consent--invalid');
     consent.setAttribute('aria-invalid', 'true');
-    error.hidden = false;
+    consentError.hidden = false;
     consent.focus();
+  }
+
+  function hideSubmitError() {
+    statusEl.hidden = true;
+    statusEl.classList.remove('form-status--error');
+    statusEl.textContent = '';
+  }
+
+  function showSubmitError() {
+    statusEl.innerHTML = errorHtml;
+    statusEl.classList.add('form-status--error');
+    statusEl.hidden = false;
+    statusEl.focus();
+  }
+
+  function setSubmitting(isSubmitting) {
+    submitBtn.disabled = isSubmitting;
+    submitBtn.setAttribute('aria-busy', isSubmitting ? 'true' : 'false');
+    submitBtn.textContent = isSubmitting ? sendingLabel : submitLabel;
+  }
+
+  function showUrlErrorIfPresent() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('fehler') === '1') {
+        showSubmitError();
+      }
+    } catch (e) {
+      /* ignore */
+    }
   }
 
   consent.addEventListener('change', function () {
     if (consent.checked) clearConsentError();
   });
 
+  showUrlErrorIfPresent();
+
   form.addEventListener('submit', function (event) {
-    if (consent.checked) return;
+    if (!consent.checked) {
+      event.preventDefault();
+      hideSubmitError();
+      showConsentError();
+      return;
+    }
+
+    clearConsentError();
+
+    if (!form.reportValidity()) {
+      event.preventDefault();
+      return;
+    }
+
+    if (typeof window.fetch !== 'function') {
+      return;
+    }
+
     event.preventDefault();
-    showConsentError();
+    hideSubmitError();
+    setSubmitting(true);
+
+    var controller = typeof AbortController === 'function' ? new AbortController() : null;
+    var timeoutId = controller
+      ? window.setTimeout(function () {
+          controller.abort();
+        }, 30000)
+      : null;
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString(),
+      signal: controller ? controller.signal : undefined,
+    })
+      .then(function (response) {
+        if (response.ok) {
+          window.location.assign('/kontakt/danke/');
+          return;
+        }
+        throw new Error('form-submit-failed');
+      })
+      .catch(function () {
+        setSubmitting(false);
+        showSubmitError();
+      })
+      .finally(function () {
+        if (timeoutId !== null) {
+          window.clearTimeout(timeoutId);
+        }
+      });
   });
 })();

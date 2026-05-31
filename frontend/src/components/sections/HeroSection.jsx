@@ -92,8 +92,8 @@ export function HeroSection() {
         >
           <div className="relative overflow-hidden rounded-[34px] border border-white/65 shadow-[0_22px_38px_rgba(35,34,32,0.16)]">
             <img
-              src="/assets/images/topics/HeroPage1.png"
-              alt="Apothekerin in der Thermen Apotheke Bad Waltersdorf"
+              src="/assets/images/topics/HeroPage2.png"
+              alt="Thermen Apotheke Bad Waltersdorf – Außenansicht"
               className="h-[560px] w-full object-cover object-center md:h-[640px]"
             />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(245,242,236,0.74)_0%,rgba(245,242,236,0.24)_38%,rgba(245,242,236,0.04)_74%)]" />
