@@ -6,9 +6,6 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <title>Thermen Apotheke Bad Waltersdorf – Ihre Apotheke in der Thermenregion</title>
   <meta name="description" content="Persönliche Beratung, breites Sortiment und Service in Bad Waltersdorf. Mo–Fr 08:00–12:30 & 14:30–18:00, Sa 08:00–12:00. Nachtdienst: 1455.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,14 +19,14 @@
           <li><a href="team/">Team</a></li>
           <li><a href="leistungen/">Leistungen</a></li>
           <li><a href="produkte/">Produkte</a></li>
-          <li class="nav-item-hide-mobile"><a href="https://www.apotheker.or.at/nachtdienst" target="_blank" rel="noopener">Nachtdienst</a></li>
+          <li class="nav-item-hide-mobile"><a href="https://www.apothekerkammer.at/apothekensuche" target="_blank" rel="noopener">Nachtdienst</a></li>
           <li class="nav-item-hide-mobile"><a href="kontakt/">Kontakt</a></li>
         </ul>
       </nav>
       <div class="header-actions">
         <a href="tel:+4333333970" class="btn btn-primary btn-header">Anrufen</a>
         <a href="kontakt/" class="btn btn-outline btn-header header-aux-link">Kontakt</a>
-        <a href="https://www.apotheker.or.at/nachtdienst" class="btn btn-outline btn-header header-aux-link" target="_blank" rel="noopener" aria-label="Nachtdienst (Apotheker.or.at)">1455</a>
+        <a href="https://www.apothekerkammer.at/apothekensuche" class="btn btn-outline btn-header header-aux-link" target="_blank" rel="noopener" aria-label="Nachtdienst – Apothekensuche (Apothekerkammer)">1455</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Bad+Waltersdorf+6+8271" class="btn btn-icon" aria-label="Route planen" target="_blank" rel="noopener">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </a>
@@ -53,7 +50,7 @@
         <p class="hero-sub">Persönlich, kompetent und für Sie da – in der Thermenregion Steiermark. Verlässlich im Alltag, erreichbar bei Bedarf und nah an den Menschen.</p>
         <div class="hero-cta">
           <a href="kontakt/" class="btn btn-primary btn-lg">Kontakt &amp; Anfahrt</a>
-          <a href="https://www.apotheker.or.at/nachtdienst" class="btn btn-outline btn-lg" target="_blank" rel="noopener">Notdienst 1455</a>
+          <a href="https://www.apothekerkammer.at/apothekensuche" class="btn btn-outline btn-lg" target="_blank" rel="noopener">Notdienst 1455</a>
         </div>
         <div class="hero-trust">
           <span>Barrierefrei & Parkplätze</span>
@@ -101,7 +98,7 @@
           </span>
           <div>
             <strong>Nachtdienst</strong>
-            <span><a href="https://www.apotheker.or.at/nachtdienst" target="_blank" rel="noopener">1455</a> · apotheker.or.at</span>
+            <span><a href="https://www.apothekerkammer.at/apothekensuche" target="_blank" rel="noopener">1455</a> · Apothekensuche</span>
           </div>
         </div>
         <div class="quick-info-item quick-info-item--parking">
@@ -210,7 +207,7 @@
           <article class="service-card">
             <span class="service-label">Nachtdienst-Hilfe</span>
             <h3>Nachtdienst-Hilfe</h3>
-            <p>Außerhalb der Öffnungszeiten: <strong>1455</strong> oder online auf apotheker.or.at.</p>
+            <p>Außerhalb der Öffnungszeiten: <strong>1455</strong> oder online in der <a href="https://www.apothekerkammer.at/apothekensuche" target="_blank" rel="noopener">Apothekensuche der Apothekerkammer</a>.</p>
             <span class="service-mini-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/><path d="M18 10h3M19.5 8.5v3"/></svg>
             </span>
@@ -423,17 +420,21 @@
           <figure class="contact-visual-card contact-photo">
             <img src="assets/images/interior/outside/ApoOutside.png" alt="Thermen Apotheke Bad Waltersdorf von außen" class="site-photo" width="1536" height="1024" loading="lazy" decoding="async">
           </figure>
-          <div class="contact-visual-card contact-map">
+          <div class="contact-visual-card contact-map" data-map-widget data-map-embed-src="https://www.google.com/maps?q=Bad+Waltersdorf+6,+8271+Bad+Waltersdorf&output=embed">
+            <div class="map-consent" data-map-consent>
+              <img src="/assets/images/map/map-placeholder.svg" alt="" class="map-placeholder-img" width="800" height="400" decoding="async">
+              <div class="map-consent-content">
+                <p class="map-consent-title">Standort auf der Karte</p>
+                <p class="map-consent-text">Google Maps wird erst nach Ihrer Einwilligung geladen. Dabei können Daten an Google übermittelt werden.</p>
+                <button type="button" class="btn btn-primary" data-map-load>Karte laden</button>
+              </div>
+            </div>
             <iframe
-              class="map-embed"
+              class="map-embed map-embed--hidden"
+              data-map-iframe
               title="Standort Thermen Apotheke Bad Waltersdorf"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Bad+Waltersdorf+6,+8271+Bad+Waltersdorf&output=embed">
-            </iframe>
-            <button type="button" class="map-click-layer" data-map-reveal aria-label="Karte aktivieren und Routenoptionen anzeigen">
-              Karte aktivieren
-            </button>
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div
               class="map-actions map-actions--hidden"
               data-map-launcher
@@ -456,7 +457,7 @@
           </address>
           <div class="contact-meta">
             <p><strong>Telefon</strong><br><a href="tel:+4333333970">03333 3970</a></p>
-            <p><strong>E-Mail</strong><br><a href="mailto:thermenapo.waltersdorf@aon.at">thermenapo.waltersdorf@aon.at</a></p>
+            <p><strong>E-Mail</strong><br><a href="mailto:office@thermen-apo.at">office@thermen-apo.at</a></p>
             <p><strong>Öffnungszeiten</strong><br>Mo–Fr 08:00–12:30 und 14:30–18:00<br>Sa 08:00–12:00</p>
           </div>
           <div class="contact-cta">

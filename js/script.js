@@ -198,16 +198,31 @@
 })();
 
 (function () {
-  var layers = document.querySelectorAll('[data-map-reveal]');
-  if (!layers.length) return;
+  var widgets = document.querySelectorAll('[data-map-widget]');
+  if (!widgets.length) return;
 
-  layers.forEach(function (layer) {
-    layer.addEventListener('click', function () {
-      var map = layer.closest('.contact-map');
-      if (!map) return;
-      var actions = map.querySelector('.map-actions');
-      if (actions) actions.classList.remove('map-actions--hidden');
-      layer.style.display = 'none';
+  widgets.forEach(function (widget) {
+    var loadBtn = widget.querySelector('[data-map-load]');
+    var consent = widget.querySelector('[data-map-consent]');
+    var iframe = widget.querySelector('[data-map-iframe]');
+    var actions = widget.querySelector('.map-actions');
+    var embedSrc = widget.getAttribute('data-map-embed-src');
+    if (!loadBtn || !consent || !iframe || !embedSrc) return;
+
+    loadBtn.addEventListener('click', function () {
+      iframe.src = embedSrc;
+      iframe.classList.remove('map-embed--hidden');
+      consent.classList.add('map-consent--hidden');
+      consent.setAttribute('aria-hidden', 'true');
+      if (actions) {
+        actions.classList.remove('map-actions--hidden');
+      }
+      var firstAction = actions && actions.querySelector('button');
+      if (firstAction) {
+        firstAction.focus();
+      } else {
+        iframe.focus();
+      }
     });
   });
 })();

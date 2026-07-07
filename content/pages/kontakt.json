@@ -12,5 +12,5 @@
       { "label": "Anrufen", "href": "tel:+4333333970", "primary": false }
     ]
   },
-  "formNote": "Das Kontaktformular ist mit Spam-Schutz (z. B. hCaptcha) versehen. Ihre Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet."
+  "formNote": "Das Kontaktformular ist mit Spam-Schutz (Honeypot) versehen. Ihre Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet."
 }

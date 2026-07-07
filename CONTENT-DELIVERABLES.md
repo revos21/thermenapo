@@ -56,4 +56,4 @@ Die **HTML-Seiten** (`ueber-uns/index.html`, `leistungen/index.html`, …) sind 
 ## Compliance
 
 - Keine medizinischen Heilversprechen; Formulierungen wie „unterstützen“, „beraten“, „kann helfen“ verwendet.
-- Fakten einheitlich: Neuübernahme ab 1. Jänner 2026 (Mag. Pharm. Doris Pieler, Mag. Pharm. Anna Katharina Wurzer); Nachtdienst 1455; Adresse Bad Waltersdorf 6, 8271; Telefon 03333 3970; E-Mail thermenapo.waltersdorf@aon.at; Öffnungszeiten Mo–Fr 08:00–12:30 & 14:30–18:00, Sa 08:00–12:00.
+- Fakten einheitlich: Neuübernahme ab 1. Jänner 2026 (Mag. Pharm. Doris Pieler, Mag. Pharm. Anna Katharina Wurzer); Nachtdienst 1455; Adresse Bad Waltersdorf 6, 8271; Telefon 03333 3970; E-Mail office@thermen-apo.at; Öffnungszeiten Mo–Fr 08:00–12:30 & 14:30–18:00, Sa 08:00–12:00.

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ddd6c8"/>
+      <stop offset="100%" stop-color="#f3eee7"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#6b6a50" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2c2825" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <rect width="800" height="400" fill="url(#grid)"/>
+  <path d="M120 280 C180 220, 260 200, 340 230 C420 260, 500 180, 580 210 C640 230, 700 250, 760 270" fill="none" stroke="#c8c3b2" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  <path d="M80 160 C140 120, 220 140, 300 110 C380 80, 460 130, 540 100 C620 70, 700 90, 760 120" fill="none" stroke="#7a795d" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+  <circle cx="400" cy="205" r="52" fill="#6b6a50" opacity="0.12"/>
+  <g filter="url(#pinShadow)" transform="translate(400 205)">
+    <path d="M0-34 C14-34 26-22 26-8 C26 8 0 34 0 34 C0 34-26 8-26-8 C-26-22-14-34 0-34Z" fill="#6b6a50"/>
+    <circle cx="0" cy="-10" r="9" fill="#f8f6f2"/>
+  </g>
+  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#54533f" opacity="0.85">Bad Waltersdorf</text>
+</svg>

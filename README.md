@@ -90,7 +90,7 @@ thermen-apotheke/
 | Variable | Zweck | Beispiel |
 |----------|--------|----------|
 | `RESEND_API_KEY` | Authentifizierung bei Resend | `re_…` |
-| `CONTACT_TO_EMAIL` | Empfänger (Microsoft-365-Postfach der Apo) | `thermenapo.waltersdorf@aon.at` |
+| `CONTACT_TO_EMAIL` | Empfänger (Microsoft-365-Postfach der Apo) | `office@thermen-apo.at` |
 | `CONTACT_FROM_EMAIL` | Absender (Domain muss in Resend verifiziert sein) | `kontakt@ihre-domain.at` |
 | `PARTNER_SHOP_URL` | Ziel-URL für `/webshop/`-Redirect | `https://partner-apotheke.at/shop` |
 
@@ -158,9 +158,9 @@ Für lokale Redirects am besten `netlify dev` nutzen; mit `npx serve` ohne vorhe
 
 - **Adresse:** Bad Waltersdorf 6, 8271 Bad Waltersdorf  
 - **Telefon:** +43 3333 3970 (Anzeige: 03333 3970)  
-- **E-Mail:** thermenapo.waltersdorf@aon.at  
+- **E-Mail:** office@thermen-apo.at  
 - **Öffnungszeiten:** Mo–Fr 08:00–12:30 und 14:30–18:00, Sa 08:00–12:00  
-- **Nachtdienst:** 1455, [apotheker.or.at](https://www.apotheker.or.at/nachtdienst)
+- **Nachtdienst:** 1455, [Apothekensuche (Apothekerkammer)](https://www.apothekerkammer.at/apothekensuche)
 
 ## Texte ändern
 

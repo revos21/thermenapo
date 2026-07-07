@@ -8,19 +8,19 @@
     "country": "Österreich",
     "phone": "+43 3333 3970",
     "phoneDisplay": "03333 3970",
-    "email": "thermenapo.waltersdorf@aon.at",
+    "email": "office@thermen-apo.at",
     "hoursWeek": "Mo–Fr 08:00–12:30 und 14:30–18:00",
     "hoursSat": "Sa 08:00–12:00",
     "hoursShort": "Mo–Fr 08:00–12:30 & 14:30–18:00 · Sa 08:00–12:00",
     "nightService": "1455",
-    "nightServiceUrl": "https://www.apotheker.or.at/nachtdienst"
+    "nightServiceUrl": "https://www.apothekerkammer.at/apothekensuche"
   },
   "nav": [
     { "label": "Start", "path": "/" },
     { "label": "Über uns", "path": "/ueber-uns/" },
     { "label": "Leistungen", "path": "/leistungen/" },
     { "label": "Produkte", "path": "/produkte/" },
-    { "label": "Nachtdienst", "path": "https://www.apotheker.or.at/nachtdienst", "external": true },
+    { "label": "Nachtdienst", "path": "https://www.apothekerkammer.at/apothekensuche", "external": true },
     { "label": "Kontakt", "path": "/kontakt/" }
   ]
 }

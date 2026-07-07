@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 :root {
     --primary: #6B6A50;
     --primary-light: #7A795D;
@@ -1803,6 +1805,58 @@
     min-height: var(--location-visual-height);
     max-height: var(--location-visual-height);
     align-self: start;
+    overflow: hidden;
+  }
+
+  .map-consent {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-consent--hidden {
+    display: none;
+  }
+
+  .map-placeholder-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .map-consent-content {
+    position: relative;
+    z-index: 1;
+    max-width: min(340px, calc(100% - 40px));
+    margin: 0 20px;
+    padding: 22px 20px;
+    text-align: center;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+
+  .map-consent-title {
+    margin: 0 0 8px 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  .map-consent-text {
+    margin: 0 0 16px 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-muted);
   }
 
   .map-embed {
@@ -1814,23 +1868,8 @@
     display: block;
   }
 
-  .map-click-layer {
-    position: absolute;
-    inset: 0;
-    border: 0;
-    width: 100%;
-    background: rgba(var(--primary-rgb), 0.08);
-    color: var(--primary-dark);
-    font-weight: 600;
-    cursor: pointer;
-    backdrop-filter: blur(1px);
-    transition: background var(--transition), color var(--transition);
-    z-index: 2;
-  }
-
-  .map-click-layer:hover {
-    background: rgba(var(--primary-rgb), 0.16);
-    color: var(--primary);
+  .map-embed--hidden {
+    display: none;
   }
 
   .map-actions {
