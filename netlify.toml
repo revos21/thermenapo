@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = "node scripts/inject-env.mjs"
+  command = "node scripts/inject-env.mjs && rm -rf docs"
 
 [build.environment]
   NODE_VERSION = "20"
